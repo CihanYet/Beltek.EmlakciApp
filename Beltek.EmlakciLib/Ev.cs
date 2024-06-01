@@ -25,6 +25,7 @@ namespace Beltek.EmlakciLib
         private string buyukluk;
         private double alan;//field
 
+
         public double Alan//Property
         {
             get

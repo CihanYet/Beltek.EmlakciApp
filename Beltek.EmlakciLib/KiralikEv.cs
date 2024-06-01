@@ -11,7 +11,7 @@ namespace Beltek.EmlakciLib
 
         }
 
-        public KiralikEv(int odasayisi, int katno, double alan, string semt, double kira, double depozito):base(odasayisi,katno,alan,semt)
+        public KiralikEv(int odasayisi, int katno, double alan, string semt, double kira, double depozito) : base(odasayisi, katno, alan, semt)
         {
             //base.Odasayisi = odasayisi;
             //base.Katno = katno;

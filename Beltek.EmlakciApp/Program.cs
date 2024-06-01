@@ -16,7 +16,7 @@ namespace Beltek.EmlakciApp
             //var evim2 = new Ev { alan = 120, katno = 2, odasayisi = 3, semt = "Yenimahalle" };
             //Console.WriteLine(evim2.EvBilgileri());
 
-           
+
 
             var ke = new KiralikEv();
             ke.Kira = 500;
@@ -25,9 +25,15 @@ namespace Beltek.EmlakciApp
             ke.Katno = 1;
             ke.Semt = "Kiralik Ev";
             ke.Alan = 100;
+            var ke1 = new KiralikEv(2, 3, 120, "Kiralik Ev", 500, 600);
 
-            Console.WriteLine();
-           
+
+            var se = new SatilikEv(2, 4, 100, "Satılık Ev", 800);
+            var se2 = new SatilikEv(4, 8, 200, "Satılık Ev", 10000);
+
+
+
+
 
 
             //Console.WriteLine("Oda sayısı giriniz:");
@@ -39,7 +45,7 @@ namespace Beltek.EmlakciApp
             //Console.WriteLine("Semt giriniz:");
             //evim.Semt = Console.ReadLine();           
 
-           // Console.WriteLine($"Girilen ev bilgileri:\n{evim.EvBilgileri()}");
+            // Console.WriteLine($"Girilen ev bilgileri:\n{evim.EvBilgileri()}");
 
         }
     }
