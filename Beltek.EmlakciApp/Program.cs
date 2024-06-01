@@ -26,15 +26,30 @@ namespace Beltek.EmlakciApp
             ke.Semt = "Kiralik Ev";
             ke.Alan = 100;
             var ke1 = new KiralikEv(2, 3, 120, "Kiralik Ev", 500, 600);
-
-
             var se = new SatilikEv(2, 4, 100, "Satılık Ev", 800);
-            var se2 = new SatilikEv(4, 8, 200, "Satılık Ev", 10000);
+            var se1 = new SatilikEv(4, 8, 200, "Satılık Ev", 10000);
 
+            Ev[] evler = new Ev[4];
+            evler[0] = se;
+            evler[1] = se1;
+            evler[2] = ke;
+            evler[3] = ke1;
 
-
-
-
+            for (int i = 0; i < evler.Length; i++)
+            {
+                //if (evler[i] is SatilikEv)
+                //{
+                //    SatilikEv sev = (SatilikEv)evler[i];
+                //    Console.WriteLine(sev.EvBilgileri());
+                //}
+                //else
+                //{
+                //    KiralikEv kev = (KiralikEv)evler[i];
+                //    Console.WriteLine(kev.EvBilgileri());
+                //}
+                Console.WriteLine(evler[i].EvBilgileri());
+                Console.WriteLine("----------------------");
+            }
 
             //Console.WriteLine("Oda sayısı giriniz:");
             //evim.Odasayisi = int.Parse(Console.ReadLine());

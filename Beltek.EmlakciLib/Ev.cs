@@ -62,12 +62,12 @@ namespace Beltek.EmlakciLib
         //public int GetOdaSayisi() => this.odasayisi;
         ////odasayisi fieldının değerini okuyan metod(get)
 
-        public string EvBilgileri()
+        public virtual string EvBilgileri()
         {
             return $"Katno:{this.Katno}\nAlan:{this.Alan}\nSemt:{this.Semt}\nOda sayısı:{this.Odasayisi}\nBüyüklük:{this.Buyukluk}";
         }
 
-        
+
         ~Ev()//Destructor
         {
             sayac--;
@@ -76,3 +76,5 @@ namespace Beltek.EmlakciLib
 }
 
 //Garbage Collector (GC)
+
+//Polymorphisim(Çok biçimlilik)
